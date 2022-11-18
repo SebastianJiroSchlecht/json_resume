@@ -9,7 +9,7 @@ module JsonResume
     end
 
     def format_link(str)
-      str.gsub!(/\[(.*?)\]\((.*?)\)/, '{\color{see} \href{\2}{\1}}')
+      str.gsub!(/\[(.*?)\]\((.*?)\)/, '{\href{\2}{\color{see} \1}}')
     end
 
     def format_autolink(str)
